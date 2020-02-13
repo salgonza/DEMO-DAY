@@ -10,18 +10,18 @@ import {
   CardBody
 } from "reactstrap";
 
-import imagen from "../assets/imagen.JPG";
-import img2 from "../assets/img2.JPG";
-import img3 from "../assets/img3.JPG";
+import Imagen from "../assets/imagen.JPG";
+import Img2 from "../assets/img2.JPG";
+import Img3 from "../assets/img3.JPG";
 
 const Cardboot = () => {
   return (
     <div className="container-fluid d-flex justify-content-center">
       <CardDeck>
         <Card>
-          <CardImg src="../assets/imagen.JPG"></CardImg>
+          <CardImg src={Imagen}></CardImg>
           <CardBody>
-            <CardTitle className=" text-center">
+            <CardTitle className="text-center">
               <h4 className="card-title">Escoge tus Productos</h4>
             </CardTitle>
             <CardSubtitle></CardSubtitle>
@@ -33,12 +33,7 @@ const Cardboot = () => {
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src={"../assets/img2.JPG"}
-            alt="Card image cap"
-          />
+          <CardImg top width="100%" src={Img2} alt="Card image cap" />
           <CardBody>
             <CardTitle className=" text-center">
               <h4 className="card-title">Agrégale Magia!</h4>
@@ -51,12 +46,7 @@ const Cardboot = () => {
           </CardBody>
         </Card>
         <Card>
-          <CardImg
-            top
-            width="100%"
-            src={"../assets/img3.JPG"}
-            alt="Card image cap"
-          />
+          <CardImg top width="100%" src={Img3} alt="Card image cap" />
           <CardBody>
             <CardTitle className=" text-center">
               <h4 className="card-title">Pasa Por tu pedido</h4>
